@@ -1,3 +1,3 @@
 # Projects
 
-Collection of Programming Projects for sfhacks
+A collection of Prrogramming Projects for [sfhacks] (http://sfhacks.club/)
