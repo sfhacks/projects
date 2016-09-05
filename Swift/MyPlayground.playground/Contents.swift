@@ -22,7 +22,7 @@
  
  ## Tradition
  */
- print("Hello, World!")
+print("Hello, World!")
 
 /*:
  ## Variables
@@ -36,6 +36,7 @@ myVariable += 10
 myVariable = 10 * myVariable
 myVariable = myVariable % 10
 
+let 🐶🐮 = "dogcow"
 
 let myConstant = 42
 // myConstant = 10 This gives an error because myConstant is a constant
@@ -57,6 +58,27 @@ let widthLabel = label + String(explicitDouble)
 */
 let width = 70
 let label2 = "The width is \(width)"
+
+/*:
+ ### Data Types
+ - All variables in Swift have a type
+ - To find type of variable in XCode option(⌥) click the variable name
+ - Bool, Double, String
+ - Type casting: Double(variable)
+*/
+var doubleVariable = 1.3
+var intVariable = 1
+var boolVariable = Double(intVariable) > doubleVariable
+var stringVariable = "boolVariable is " + String(boolVariable)
+
+/*:
+ ### Tuple Types
+*/
+var someType = (3.14159, 2.71828)
+typealias Point = (Int, Int)
+var somePoint: Point = (0, 0)
+var tupleIntString: (Int, String) = (1, "one")
+var namedTuple: (x: Int, y: Int) = (1, 10)
 
 /*:
  ## Arrays
@@ -90,15 +112,5 @@ if lancers > bells && lancers == 1 {
     
 }
 
-/*:
- ## Types
- - All variables in Swift have a type
- - To find type of variable in XCode option(⌥) click the variable name
- - Bool, Double, String
- - Type casting: Double(variable)
- */
 
-var doubleVariable = 1.3
-var intVariable = 1
-var boolVariable = Double(intVariable) > doubleVariable
-var string = "boolVariable is " + String(boolVariable)
+
